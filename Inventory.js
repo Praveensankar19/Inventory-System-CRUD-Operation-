@@ -38,13 +38,6 @@ function readAll() {
     tabledata.innerHTML = element;
 }
 
-// let a = 10;
-// let b = 120;
-// let c = 11;
-
-// let  a = 10,
-// b = 120,
-// c = 11;
 
 function add() {
     let itemno = document.querySelector("#itemno").value;
@@ -62,19 +55,6 @@ function add() {
     let objectdata = JSON.parse(object);
 
     let newId = objectdata.length ? objectdata[objectdata.length - 1].id + 1 : 1;
-
-    // let objLength = objectdata.length;
-    // let lastElementId = objectdata[objLength - 1].id;
-    // let newIds = lastElementId + 1;
-    // console.log(newIds);
-
-    // if(objectdata.length > 0) {
-    //     // last id + 1
-    // } else {
-    //     // new id is 1
-    // }
-
-    // length>0 ? true : false
 
     let newobj = {
         id: newId,
@@ -94,13 +74,6 @@ function add() {
 }
 
 function deleteProduct(id) {
-    // let object = localStorage.getItem("object");
-    // let objectdata = JSON.parse(object);
-
-    // objectdata = objectdata.filter(product => product.id !== id);
-
-    // localStorage.setItem("object", JSON.stringify(objectdata));
-    // readAll();
      let confirmDelete = confirm("Are you sure you want to delete this product?");
     
         if (confirmDelete) {
