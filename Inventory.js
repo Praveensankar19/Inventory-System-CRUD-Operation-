@@ -174,18 +174,3 @@ function clearFields() {
 
 
 
-// ------------------------------------------------------------------------------------------->
-
-function addcart(){
-    
-    if(!localStorage.getItem("cart")) {
-        localStorage.setItem("cart", JSON.stringify(data));
-    }
-    let cart =localStorage.getItem("cart")
-    let objectdata = JSON.parse(cart);
-
-}
-
-function viewcart(){
-
-}
